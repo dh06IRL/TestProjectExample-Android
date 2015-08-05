@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.livingsocial.livingsocialtest.views.ScrollDetectableListView
+        <com.david.github.views.ScrollDetectableListView
             android:id="@+id/main_data_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

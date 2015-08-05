@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
+import com.david.github.R;
 import com.david.github.adapter.DataAdapter;
 import com.david.github.models.DataModel;
 import com.david.github.services.Api;
@@ -24,7 +25,6 @@ import com.david.github.utils.Constants;
 import com.david.github.utils.Utils;
 import com.david.github.views.OnDetectScrollListener;
 import com.david.github.views.ScrollDetectableListView;
-import com.livingsocial.livingsocialtest.R;
 import com.nhaarman.listviewanimations.appearance.simple.SwingBottomInAnimationAdapter;
 import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;

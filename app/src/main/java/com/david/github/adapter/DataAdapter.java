@@ -14,11 +14,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.david.github.R;
 import com.david.github.activity.DataViewerActivity;
 import com.david.github.activity.MainActivity;
 import com.david.github.models.DataModel;
 import com.github.florent37.glidepalette.GlidePalette;
-import com.livingsocial.livingsocialtest.R;
 
 import java.util.ArrayList;
 import java.util.Locale;
