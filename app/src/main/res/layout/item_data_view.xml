@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/data_image"
+            android:contentDescription="@string/app_name"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            tools:src="@android:color/black" />
+
+        <TextView
+            android:id="@+id/data_price"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:transitionName="@string/transition_price"
+            tools:text="$100.99" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/data_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:transitionName="@string/transition_title"
+            tools:text="PLACE WITH DEAL" />
+
+        <TextView
+            android:id="@+id/data_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:transitionName="@string/transition_merchant"
+            tools:text="PLACE NAME" />
+
+        <TextView
+            android:id="@+id/data_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:transitionName="@string/transition_desc"
+            tools:text="PLACE THINGS AND THINGS AND MORE THINGS FOR THINGS" />
+    </LinearLayout>
+
+</LinearLayout>

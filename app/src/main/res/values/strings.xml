@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Example App</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_reload">Reload</string>
+
+    <string name="main_network_error">Please check your network connection before using this app!</string>
+    <string name="main_update_fail">Oh no! We failed to update!</string>
+    <string name="main_empty_data">Nothing Found here!</string>
+
+    <string name="main_snack_retry">Retry</string>
+    <string name="main_snack_done">Done</string>
+
+    <string name="main_search_hint">ABC...</string>
+
+    <string name="transition_title">transition:Title</string>
+    <string name="transition_price">transition:Price</string>
+    <string name="transition_merchant">transition:Merchant</string>
+    <string name="transition_desc">transition:Desc</string>
+
+    <string name="viewer_error">Uh no, something went wrong!</string>
+    <string name="viewer_okay">Okay :(</string>
+</resources>

@@ -1,0 +1,13 @@
+[ { "description" : "Blah Blah Blah",
+    "image_url" : "http://i.imgur.com/e14ZDTy.jpg",
+    "merchant_name" : "DOGGY",
+    "price" : 0.99,
+    "title" : "DOG"
+  },
+  { "description" : "Blah Blah Blah",
+    "image_url" : "http://i.imgur.com/R5SJrBn.jpg",
+    "merchant_name" : "ANOTHER DOGGY",
+    "price" : 1.99,
+    "title" : "ANOTHER DOG"
+  }
+]
