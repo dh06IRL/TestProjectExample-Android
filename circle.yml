@@ -1,16 +1,33 @@
-machine:
-  environment:
-    ANDROID_HOME: /home/ubuntu/android
+# machine:
+#   environment:
+#     ANDROID_HOME: /home/ubuntu/android
 
-dependencies:
-  pre:
-    - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-21.1.2,android-21,extra-google-m2repository,extra-google-google_play_services,extra-android-support,extra-android-m2repository
-  cache_directories:
-    - ~/.android
-    - ~/android
-  override:
-    - ./install-dependencies.sh
+# dependencies:
+#   pre:
+#     - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-21.1.2,android-21,extra-google-m2repository,extra-google-google_play_services,extra-android-support,extra-android-m2repository
+#   cache_directories:
+#     - ~/.android
+#     - ~/android
+#   override:
+#     - ./install-dependencies.sh
+
+# test:
+#   override:
+#     - ./gradlew build
+#     - cp -r project-name/build/outputs $CIRCLE_ARTIFACTS
+
 
 test:
   override:
-    - ./gradlew build
+    # start the emulator
+    # - emulator -avd circleci-android22 -no-audio -no-window:
+        # background: true
+        # parallel: true
+    # wait for it to have booted
+    # - circle-android wait-for-boot
+    # run tests  against the emulator.
+    # - ./gradlew connectedAndroidTest
+    # copy the build outputs to artifacts
+    - cp -r my-project/build/outputs $CIRCLE_ARTIFACTS
+    # copy the test results to the test results directory.
+    # - cp -r my-project/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
