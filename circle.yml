@@ -19,6 +19,7 @@
 
 test:
   override:
+    - ./gradlew assembleDebug
     # start the emulator
     # - emulator -avd circleci-android22 -no-audio -no-window:
         # background: true
